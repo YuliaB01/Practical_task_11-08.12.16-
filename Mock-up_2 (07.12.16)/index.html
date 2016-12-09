@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form2</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="page-wrapper">
+
+        <!-- HEADER -->
+        <header class="header">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Construction companies portal</a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Users<span class="sr-only">(current)</span></a></li>
+                            <li><a href="#">Objects</a></li>
+                            <li><a href="#">Articles</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+        </header><!-- /Header -->
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12">
+                        <h1 class="page-header">
+                            <a href="#" class="btn btn-link">
+                                <span class="glyphicon glyphicon-chevron-left arrow"></span>
+                            </a>
+                            Edit "Some Object" of "Some company"
+                        </h1>
+                    </div>
+                </div>
+
+                <!-- FORM -->
+                <div class="row">
+                    <div class="col-lg-12 col-md-12">
+                        <fieldset>
+                            <legend>Object info</legend>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="form-group row">
+                                        <label for="title" class="col-lg-2 col-md-2 control-label">
+                                            Title
+                                        </label>
+                                        <div class="col-lg-10 col-md-10">
+                                            <input id="title" type="text" class="form-control" placeholder="Enter object title">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="logo" class="col-lg-2 col-md-2 control-label">
+                                            Logo
+                                        </label>
+                                        <div class="col-lg-10 col-md-10">
+                                            <img id="logo" class="thumbnail img-thumbnail img-responsive user-image" src="http://placehold.it/1600x900">
+                                            <button class="btn btn-link">Change</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="form-group row">
+                                        <label for="title" class="col-lg-4 col-md-4 control-label">
+                                            Parent company
+                                        </label>
+                                        <div class="col-lg-8 col-md-8">
+                                            <select class="form-control">
+                                                <option>Company A</option>
+                                                <option>Company B</option>
+                                                <option>Company C</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <fieldset>
+                                        <legend>Address</legend>
+                                        <div class="form-group">
+                                            <label for="city" class="control-label">City</label>
+                                            <input id="city" type="text" class="form-control" placeholder="Enter city name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="district" class="control-label">Micro-district</label>
+                                            <input id="district" type="text" class="form-control" placeholder="Enter micro-district name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="street" class="control-label">Street</label>
+                                            <input id="street" type="text" class="form-control" placeholder="Enter street name">
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-5 col-md-5">
+                                    <div class="form-group row">
+                                        <label for="price" class="control-label col-lg-6 col-md-6">Price by square meter</label>
+                                        <div class="col-lg-6 col-md-6">
+                                            <input id="price" type="number" class="form-control" placeholder="Enter price">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="status" class="control-label col-lg-6 col-md-6">Status</label>
+                                        <div class="col-lg-6 col-md-6">
+                                            <select id="status" class="form-control">
+                                                <option selected>InPlanning</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-md-5">
+                                    <div class="form-group row">
+                                        <label for="object-class" class="control-label col-lg-5 col-md-5">Object class</label>
+                                        <div class="col-lg-7 col-md-7">
+                                            <input id="object-class" type="number" class="form-control" placeholder="Enter object class">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="finish-date" class="control-label col-lg-5 col-md-5">Finish date</label>
+                                        <div class="col-lg-7 col-md-7">
+                                            <input type="text" id="finish-date" class="form-control" placeholder="Enter finish date"></input>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-2">
+                                    <div class="form-group row">
+                                        <label for="top-rated" class="control-label col-lg-10 col-md-10">Show in top rated</label>
+                                        <div class="col-lg-2 col-md-2">
+                                            <input id="top-rated" type="checkbox">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <div class="row">
+                    <div class="col-lg-12 col-md-12">
+                        <fieldset>
+                            <legend>Content</legend>
+                            <div class="form-group row">
+                                <div class="col-lg-12">
+                                    <textarea name="content" class="form-control " cols="80" rows="10"></textarea>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <div class="form-group clearfix">
+                            <div class="btn-group pull-right">
+                                <button type="button" class="btn btn-success">
+                                    <span class="glyphicon glyphicon-floppy-save"></span>
+                                    Save
+                                </button>
+                                <button type="button" class="btn btn-danger">
+                                    <span class="glyphicon glyphicon-minus-sign"></span>
+                                    Cancel
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /Company description -->
+                <!-- /FORM -->
+
+                <div class="row">
+                    <div class="col-lg-12 col-md-12">
+                        <fieldset>
+                            <legend></legend>
+
+                            <!-- GALLERY -->
+                            <div class="form-group">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading clearfix">
+                                        Galleries
+                                        <button type="button" class="btn btn-success btn-xs">
+                                            <span class="glyphicon glyphicon-plus"></span>
+                                            Create gallery
+                                        </button>
+                                        <button type="button" class="btn btn-primary btn-xs pull-right">
+                                            <span class="glyphicon glyphicon-open"></span>
+                                            Create image
+                                        </button>
+                                    </div>
+                                    <div class="panel-body">
+                                        <ul class="nav nav-tabs">
+                                            <li role="presentation" class="active">
+                                                <a href="#photos" data-toggle="tab">Photos</a>
+                                            </li>
+                                            <li role="presentation">
+                                                <a href="#schemas" data-toggle="tab">Apartment schemas</a>
+                                            </li>
+                                        </ul>
+
+                                        <div class="gallery tab-content">
+                                            <div id="photos" class="tab-pane fade in active">
+                                                <ul class="gallery_list">
+                                                    <li class="gallery_list_item">
+                                                        <div class="gallery_list_image">
+                                                            <img src="http://placehold.it/700x400" alt="photo" class="img">
+                                                        </div>
+                                                        <div class="gallery_list_caption">
+                                                            <p class="caption_text">
+                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto in, iure nisi sequi similique.
+                                                            </p>
+                                                        </div>
+                                                        <div class="gallery_list_buttons">
+                                                            <p class="caption_button">
+                                                                <a href="#" class="btn btn-primary btn-xs" role="button">
+                                                                    <span class="glyphicon glyphicon-pencil"></span>
+                                                                    Edit
+                                                                </a>
+                                                                <a href="#" class="btn btn-link btn-xs" role="button">
+                                                                    <span class="glyphicon glyphicon-trash"></span>
+                                                                    Remove
+                                                                </a>
+                                                            </p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="gallery_list_item">
+                                                        <div class="gallery_list_image list-image">
+                                                            <img src="http://placehold.it/700x400" alt="photo" class="img image img-thumbnail">
+                                                            <button class="btn btn-link gallery_btn">Change</button>
+                                                        </div>
+                                                        <div class="gallery_list_caption" contenteditable>
+                                                            <p class="caption_text text-active">
+                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto in, iure nisi sequi similique.
+                                                            </p>
+                                                        </div>
+                                                        <div class="gallery_list_buttons">
+                                                            <p class="caption_button">
+                                                                <a href="#" class="btn btn-success btn-xs" role="button">
+                                                                    <span class="glyphicon glyphicon-pencil"></span>
+                                                                    Save
+                                                                </a>
+                                                                <a href="#" class="btn btn-link btn-xs" role="button">
+                                                                    <span class="glyphicon glyphicon-minus-sign"></span>
+                                                                    Cancel
+                                                                </a>
+                                                            </p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="gallery_list_item">
+                                                        <div class="gallery_list_image">
+                                                            <img src="http://placehold.it/700x400" alt="photo" class="img">
+                                                        </div>
+                                                        <div class="gallery_list_caption">
+                                                            <p class="caption_text">
+                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto in, iure nisi sequi similique.
+                                                            </p>
+                                                        </div>
+                                                        <div class="gallery_list_buttons">
+                                                            <p class="caption_button">
+                                                                <a href="#" class="btn btn-primary btn-xs" role="button">
+                                                                    <span class="glyphicon glyphicon-pencil"></span>
+                                                                    Edit
+                                                                </a>
+                                                                <a href="#" class="btn btn-link btn-xs" role="button">
+                                                                    <span class="glyphicon glyphicon-trash"></span>
+                                                                    Remove
+                                                                </a>
+                                                            </p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="gallery_list_item">
+                                                        <div class="gallery_list_image">
+                                                            <img src="http://placehold.it/700x400" alt="photo" class="img">
+                                                        </div>
+                                                        <div class="gallery_list_caption">
+                                                            <p class="caption_text">
+                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto in, iure nisi sequi similique.
+                                                            </p>
+                                                        </div>
+                                                        <div class="gallery_list_buttons">
+                                                            <p class="caption_button">
+                                                                <a href="#" class="btn btn-primary btn-xs" role="button">
+                                                                    <span class="glyphicon glyphicon-pencil"></span>
+                                                                    Edit
+                                                                </a>
+                                                                <a href="#" class="btn btn-link btn-xs" role="button">
+                                                                    <span class="glyphicon glyphicon-trash"></span>
+                                                                    Remove
+                                                                </a>
+                                                            </p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="gallery_list_item">
+                                                        <div class="gallery_list_image">
+                                                            <img src="http://placehold.it/700x400" alt="photo" class="img">
+                                                        </div>
+                                                        <div class="gallery_list_caption">
+                                                            <p class="caption_text">
+                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto in, iure nisi sequi similique.
+                                                            </p>
+                                                        </div>
+                                                        <div class="gallery_list_buttons">
+                                                            <p class="caption_button">
+                                                                <a href="#" class="btn btn-primary btn-xs" role="button">
+                                                                    <span class="glyphicon glyphicon-pencil"></span>
+                                                                    Edit
+                                                                </a>
+                                                                <a href="#" class="btn btn-link btn-xs" role="button">
+                                                                    <span class="glyphicon glyphicon-trash"></span>
+                                                                    Remove
+                                                                </a>
+                                                            </p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="gallery_list_item">
+                                                        <div class="gallery_list_image">
+                                                            <img src="http://placehold.it/700x400" alt="photo" class="img">
+                                                        </div>
+                                                        <div class="gallery_list_caption">
+                                                            <p class="caption_text">
+                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto in, iure nisi sequi similique.
+                                                            </p>
+                                                        </div>
+                                                        <div class="gallery_list_buttons">
+                                                            <p class="caption_button">
+                                                                <a href="#" class="btn btn-primary btn-xs" role="button">
+                                                                    <span class="glyphicon glyphicon-pencil"></span>
+                                                                    Edit
+                                                                </a>
+                                                                <a href="#" class="btn btn-link btn-xs" role="button">
+                                                                    <span class="glyphicon glyphicon-trash"></span>
+                                                                    Remove
+                                                                </a>
+                                                            </p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="gallery_list_item">
+                                                        <div class="gallery_list_image">
+                                                            <img src="http://placehold.it/700x400" alt="photo" class="img">
+                                                        </div>
+                                                        <div class="gallery_list_caption">
+                                                            <p class="caption_text">
+                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto in, iure nisi sequi similique.
+                                                            </p>
+                                                        </div>
+                                                        <div class="gallery_list_buttons">
+                                                            <p class="caption_button">
+                                                                <a href="#" class="btn btn-primary btn-xs" role="button">
+                                                                    <span class="glyphicon glyphicon-pencil"></span>
+                                                                    Edit
+                                                                </a>
+                                                                <a href="#" class="btn btn-link btn-xs" role="button">
+                                                                    <span class="glyphicon glyphicon-trash"></span>
+                                                                    Remove
+                                                                </a>
+                                                            </p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div id="schemas" class="tab-pane fade">
+                                                <h3>Apartment schemas</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi delectus ducimus impedit iste quas vero?</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- /GALLERY -->
+
+                            <!-- TABLE -->
+                            <div class="form-group">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        Reviews
+                                        <button class="btn btn-success btn-xs">
+                                            <span class="gliphicon glyphicon-plus"></span>
+                                            Add new
+                                        </button>
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table class="table table-striped table-hover table-reviews">
+                                            <tr class="table-reviews-row">
+                                                <th class="table-data">Title</th>
+                                                <th class="table-data">Text</th>
+                                                <th class="table-data">Options</th>
+                                            </tr>
+                                            <tr class="table-reviews-row">
+                                            <td class="table-data table-data-title">Генплан</td>
+                                            <td class="table-data">За чинним генпланом міста ця ділянка належить до територій зелених насаджень загального користування. А в таких зонах будівництво житлових будівель ЗАБОРОНЕНО.</td>
+                                            <td class="table-data table-data-buttons">
+                                                <div class="btn-group">
+                                                    <button class="btn btn-success btn-xs">
+                                                        <span class="glyphicon glyphicon-pencil"></span>
+                                                        Edit
+                                                    </button>
+                                                    <button class="btn btn-danger btn-xs">
+                                                        <span class="glyphicon glyphicon-trash"></span>
+                                                        Remove
+                                                    </button>
+                                                </div>
+                                            </td>
+                                            </tr>
+                                            <tr class="table-reviews-row">
+                                                <td class="table-data table-data-title">Земля</td>
+                                                <td class="table-data">Територія перебуває в приватній власності Метлюх Ірини Григорівни. Цільове призначення ділянки в кадастрі - для будівництва та обслуговування житлового будинку господарських будівель і споруд. ЇЇ площа - 0.0511 га.</td>
+                                                <td class="table-data table-data-buttons">
+                                                    <div class="btn-group">
+                                                        <button class="btn btn-success btn-xs">
+                                                            <span class="glyphicon glyphicon-pencil"></span>
+                                                            Edit
+                                                        </button>
+                                                        <button class="btn btn-danger btn-xs">
+                                                            <span class="glyphicon glyphicon-trash"></span>
+                                                            Remove
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="table-reviews-row">
+                                                <td class="table-data">
+                                                    <input type="text" class="form-control" value="New title">
+                                                </td>
+                                                <td class="table-data">
+                                                    <textarea class="form-control">Архітектурно-планувальне завдання за цією адресою отримав приватний підприємець 21.03.2007 р. В реєстрах ДАБІ жодних декларацій на початок будівницта чи про готовність об'єкта до експлуатації знайти не вдалося.
+                                                    </textarea>
+                                                </td>
+                                                <td class="table-data table-data-buttons">
+                                                    <div class="btn-group">
+                                                        <button class="btn btn-warning btn-xs">
+                                                            <span class="glyphicon glyphicon-pencil"></span>
+                                                            Save
+                                                        </button>
+                                                        <button class="btn btn-primary btn-xs">
+                                                            <span class="glyphicon glyphicon-trash"></span>
+                                                            Cancel
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div><!-- /TABLE -->
+
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>
