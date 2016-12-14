@@ -1,0 +1,64 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+}
+
+.page_header {
+  background: #0A4172;
+}
+
+.tog-button {
+  background-color: #7FA3C2;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.icon-bar {
+  background-color: white;
+}
+
+.navmenu-container {
+  width: 50%;
+}
+.navmenu-list {
+  .list-style;
+
+  &-item {
+  display: inline-block;
+  }
+
+  &-link {
+    .link-style;
+    font-variant: small-caps;
+  }
+
+  &-link:hover {
+    background: #62B5F4;
+  }
+}
+
+.modal-container {
+  width: 200px;
+  float: right;
+}
+
+.modal-list a {
+  font-size: 15px;
+}
+
+@media (max-width: 768px) {
+   .navmenu-list {
+     width: auto;
+     height:auto;
+
+     &-item,
+     &-link {
+       display: block;
+     }
+   }
+
+  .modal-container {
+    float: none;
+  }
+}
+
+@import "utils";

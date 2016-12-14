@@ -55,205 +55,212 @@
                 <!-- User info/Company info -->
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
-                        <fieldset>
-                            <legend>User info</legend>
+                        <form>
+                            <fieldset>
+                                <legend>User info</legend>
+                                    <div class="form-group row">
+                                        <label for="owner_photo" class="col-lg-4 col-md-4 control-label">
+                                            Owner photo
+                                        </label>
+                                        <div class="col-lg-8 col-md-8">
+                                            <img id="owner_photo" class="thumbnail img-thumbnail img-responsive user-img" src="http://placehold.it/200x200">
+                                            <button class="btn btn-link">Change</button>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="owner_full_name" class="col-lg-4 col-md-4 control-label">
+                                            Owner full name
+                                        </label>
+                                        <div class="col-lg-8 col-md-8">
+                                            <input id="owner_full_name" type="text" class="form-control" placeholder="Enter owner full name">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="owner_address" class="col-lg-4 col-md-4 control-label">
+                                            Owner address
+                                        </label>
+                                        <div class="col-lg-8 col-md-8">
+                                            <textarea id="owner_address" class="form-control" placeholder="Enter owner address"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="owner_phone_number" class="col-lg-4 col-md-4 control-label">
+                                            Owner phone number
+                                        </label>
+                                        <div class="col-lg-8 col-md-8">
+                                            <input type="number" id="owner_phone_number" class="form-control" placeholder="Enter phone number">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="owner_email" class="col-lg-4 col-md-4 control-label">
+                                            Owner E-mail
+                                        </label>
+                                        <div class="col-lg-8 col-md-8">
+                                            <input type="email" id="owner_email" class="form-control" placeholder="Enter e-mail address">
+                                        </div>
+                                    </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <form>
+                            <fieldset>
+                                <legend>Company info</legend>
                                 <div class="form-group row">
                                     <label for="owner_photo" class="col-lg-4 col-md-4 control-label">
-                                        Owner photo
+                                        Company photo
                                     </label>
                                     <div class="col-lg-8 col-md-8">
-                                        <img id="owner_photo" class="thumbnail img-thumbnail img-responsive user-img" src="http://placehold.it/200x200">
+                                        <img id="company_photo" class="thumbnail img-thumbnail img-responsive user-img" src="http://placehold.it/200x200">
                                         <button class="btn btn-link">Change</button>
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="owner_full_name" class="col-lg-4 col-md-4 control-label">
-                                        Owner full name
+                                    <label for="company_name" class="col-lg-4 col-md-4 control-label">
+                                        Company name
                                     </label>
                                     <div class="col-lg-8 col-md-8">
-                                        <input id="owner_full_name" type="text" class="form-control" placeholder="Enter owner full name">
+                                        <input id="company_name" type="text" class="form-control" placeholder="Enter company name">
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="owner_address" class="col-lg-4 col-md-4 control-label">
-                                        Owner address
+                                    <label for="rating" class="col-lg-4 col-md-4 control-label">
+                                        Rating
                                     </label>
-                                    <div class="col-lg-8 col-md-8">
-                                        <textarea id="owner_address" class="form-control" placeholder="Enter owner address"></textarea>
+                                    <div id="rating" class="col-lg-8 col-md-8">
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="owner_phone_number" class="col-lg-4 col-md-4 control-label">
-                                        Owner phone number
+                                    <label for="top" class="col-lg-4 col-md-4 control-label">
+                                       Show in top
                                     </label>
                                     <div class="col-lg-8 col-md-8">
-                                        <input type="number" id="owner_phone_number" class="form-control" placeholder="Enter phone number">
+                                        <input id="top" type="checkbox">
                                     </div>
                                 </div>
-                                <div class="form-group row">
-                                    <label for="owner_email" class="col-lg-4 col-md-4 control-label">
-                                        Owner E-mail
-                                    </label>
-                                    <div class="col-lg-8 col-md-8">
-                                        <input type="email" id="owner_email" class="form-control" placeholder="Enter e-mail address">
-                                    </div>
-                                </div>
-                        </fieldset>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <fieldset>
-                            <legend>Company info</legend>
-                            <div class="form-group row">
-                                <label for="owner_photo" class="col-lg-4 col-md-4 control-label">
-                                    Company photo
-                                </label>
-                                <div class="col-lg-8 col-md-8">
-                                    <img id="company_photo" class="thumbnail img-thumbnail img-responsive user-img" src="http://placehold.it/200x200">
-                                    <button class="btn btn-link">Change</button>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="company_name" class="col-lg-4 col-md-4 control-label">
-                                    Company name
-                                </label>
-                                <div class="col-lg-8 col-md-8">
-                                    <input id="company_name" type="text" class="form-control" placeholder="Enter company name">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="rating" class="col-lg-4 col-md-4 control-label">
-                                    Rating
-                                </label>
-                                <div id="rating" class="col-lg-8 col-md-8">
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="top" class="col-lg-4 col-md-4 control-label">
-                                   Show in top
-                                </label>
-                                <div class="col-lg-8 col-md-8">
-                                    <input id="top" type="checkbox">
-                                </div>
-                            </div>
-                        </fieldset>
+                            </fieldset>
+                        </form>
                     </div>
                 </div><!-- /User info/Company info -->
                 <!-- Company description -->
                 <div class="row">
                     <div class="col-lg-12 col-md-12">
-                        <fieldset>
-                            <legend>Company description</legend>
-                            <div class="form-group row">
-                                <div class="col-lg-12">
-                                    <textarea name="company_description" class="form-control " cols="80" rows="10"></textarea>
+                        <form>
+                            <fieldset>
+                                <legend>Company description</legend>
+                                <div class="form-group row">
+                                    <div class="col-lg-12">
+                                        <textarea name="company_description" class="form-control " cols="80" rows="10"></textarea>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <div class="form-group clearfix">
+                                <div class="btn-group pull-right">
+                                    <button type="button" class="btn btn-success">
+                                        <span class="glyphicon glyphicon-floppy-save"></span>
+                                        Save
+                                    </button>
+                                    <button type="button" class="btn btn-danger">
+                                        <span class="glyphicon glyphicon-minus-sign"></span>
+                                        Cancel
+                                    </button>
                                 </div>
                             </div>
-                        </fieldset>
-
-                        <div class="form-group clearfix">
-                            <div class="btn-group pull-right">
-                                <button type="button" class="btn btn-success">
-                                    <span class="glyphicon glyphicon-floppy-save"></span>
-                                    Save
-                                </button>
-                                <button type="button" class="btn btn-danger">
-                                    <span class="glyphicon glyphicon-minus-sign"></span>
-                                    Cancel
-                                </button>
-                            </div>
-                        </div>
+                        </form>
                     </div>
                 </div><!-- /Company description -->
 
-                <div class="form-group">
-                    <!-- Panel -->
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            Company contacts
-                            <button class="btn btn-success btn-xs">
-                                <span class="glyphicon glyphicon-plus"></span>
-                                Add new
-                            </button>
-                        </div>
-                        <!-- Table -->
-                        <table class="table table-striped table-hover table-responsive  company_contacts_table">
-                            <tr class="thead">
-                                <th>Title</th>
-                                <th>Value</th>
-                                <th>Type</th>
-                                <th>Options</th>
-                            </tr>
-                            <tr>
-                                <td>Phone number</td>
-                                <td>097 12 34 567</td>
-                                <td>Phone</td>
-                                <td>
-                                    <div class="btn-group btn-group-xs">
-                                        <button class="btn btn-success">
-                                            <span class="glyphicon glyphicon-pencil"></span>
-                                            Edit
-                                        </button>
-                                        <button class="btn btn-danger">
-                                            <span class="glyphicon glyphicon-trash"></span>
-                                            Remove
-                                        </button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Fax</td>
-                                <td>123 45 67 890</td>
-                                <td>Fax</td>
-                                <td>
-                                    <div class="btn-group btn-group-xs">
-                                        <button class="btn btn-success">
-                                            <span class="glyphicon glyphicon-pencil"></span>
-                                            Edit
-                                        </button>
-                                        <button class="btn btn-danger">
-                                            <span class="glyphicon glyphicon-trash"></span>
-                                            Remove
-                                        </button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input type="text" class="form-control f_input" name="fax" value="Fax">
-                                </td>
-                                <td>
-                                    <input type="text" class="form-control f_input" name="number" value="123 45 67 890">
-                                </td>
-                                <td>
-                                    <select class="form-control f_input" name="fax">
-                                        <option selected>Tel</option>
-                                        <option>Mobile</option>
-                                        <option>Fax</option>
-                                        <option>Email</option>
-                                        <option>WebSite</option>
-                                    </select>
-                                </td>
-                                <td>
-                                    <div class="btn-group btn-group-xs">
-                                        <button class="btn btn-primary">
-                                            <span class="glyphicon glyphicon-pencil"></span>
-                                            Edit
-                                        </button>
-                                        <button class="btn btn-warning">
-                                            <span class="glyphicon glyphicon-trash"></span>
-                                            Remove
-                                        </button>
-                                    </div>
-                                </td>
-                            </tr>
-                        </table><!-- /Table -->
-                    </div><!-- /Panel -->
-
+                <form>
+                    <div class="form-group">
+                        <!-- Panel -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Company contacts
+                                <button class="btn btn-success btn-xs">
+                                    <span class="glyphicon glyphicon-plus"></span>
+                                    Add new
+                                </button>
+                            </div>
+                            <!-- Table -->
+                            <table class="table table-striped table-hover table-responsive  company_contacts_table">
+                                <tr class="thead">
+                                    <th>Title</th>
+                                    <th>Value</th>
+                                    <th>Type</th>
+                                    <th>Options</th>
+                                </tr>
+                                <tr>
+                                    <td>Phone number</td>
+                                    <td>097 12 34 567</td>
+                                    <td>Phone</td>
+                                    <td>
+                                        <div class="btn-group btn-group-xs">
+                                            <button class="btn btn-success">
+                                                <span class="glyphicon glyphicon-pencil"></span>
+                                                Edit
+                                            </button>
+                                            <button class="btn btn-danger">
+                                                <span class="glyphicon glyphicon-trash"></span>
+                                                Remove
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Fax</td>
+                                    <td>123 45 67 890</td>
+                                    <td>Fax</td>
+                                    <td>
+                                        <div class="btn-group btn-group-xs">
+                                            <button class="btn btn-success">
+                                                <span class="glyphicon glyphicon-pencil"></span>
+                                                Edit
+                                            </button>
+                                            <button class="btn btn-danger">
+                                                <span class="glyphicon glyphicon-trash"></span>
+                                                Remove
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="text" class="form-control f_input" name="fax" value="Fax">
+                                    </td>
+                                    <td>
+                                        <input type="text" class="form-control f_input" name="number" value="123 45 67 890">
+                                    </td>
+                                    <td>
+                                        <select class="form-control f_input" name="fax">
+                                            <option selected>Tel</option>
+                                            <option>Mobile</option>
+                                            <option>Fax</option>
+                                            <option>Email</option>
+                                            <option>WebSite</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <div class="btn-group btn-group-xs">
+                                            <button class="btn btn-primary">
+                                                <span class="glyphicon glyphicon-pencil"></span>
+                                                Edit
+                                            </button>
+                                            <button class="btn btn-warning">
+                                                <span class="glyphicon glyphicon-trash"></span>
+                                                Remove
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table><!-- /Table -->
+                        </div><!-- /Panel -->
+                    </form>
                 </div>
             </div><!-- /Container -->
         </main>
